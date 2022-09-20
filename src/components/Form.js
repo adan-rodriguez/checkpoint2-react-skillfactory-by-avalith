@@ -1,17 +1,19 @@
 const Form = () => {
+  const submitHandler = (e) => {
+    e.preventDefault();
+
+    let formData = new FormData(e.target);
+
+    for (let data of formData) {
+      console.log(data[0] + ": " + data[1]);
+    }
+
+    e.target.reset();
+  };
+
   return (
     <main className="main-form">
-      <form
-        onSubmit={(event) => {
-          event.preventDefault();
-
-          let formData = new FormData(event.target);
-
-          for (let data of formData) {
-            console.log(data[0] + ": " + data[1]);
-          }
-        }}
-      >
+      <form onSubmit={submitHandler}>
         <h1 className="form-title">Formulario</h1>
         <p className="required">
           Los campos obligatorios se marcan con un
@@ -64,7 +66,7 @@ const Form = () => {
             ></textarea>
           </li>
           <li className="button">
-            <button type="submit">Enviar</button>
+            <button className="submit-button">Enviar</button>
           </li>
         </ul>
       </form>

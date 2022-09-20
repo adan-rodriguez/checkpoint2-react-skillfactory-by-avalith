@@ -21,7 +21,7 @@ const CardsContainer = () => {
       {characters.map((character, index) => {
         return (
           <Link key={index} to={`/rickandmorty/${character.id}`}>
-            <ImageCard image={character.image} />
+            <ImageCard image={character.image} name={character.name} />
             <NameCard name={character.name} />
           </Link>
         );
