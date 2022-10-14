@@ -6,21 +6,20 @@ import Header from "./components/Header";
 import Form from "./components/Form";
 import CardsContainer from "./components/CardsContainer";
 import CardDetails from "./components/CardDetails";
+import Layout from "./Layout";
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/users" element={<Table />} />
-        <Route path="/rickandmorty" element={<CardsContainer />} />
-        <Route path="/rickandmorty/:id" element={<CardDetails />} />
-        <Route path="/form" element={<Form />} />
-        <Route path="*" element={<Landing />} />
-      </Routes>
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Landing />} />
+        <Route path="users" element={<Table />} />
+        <Route path="rickandmorty" element={<CardsContainer />} />
+        <Route path="rickandmorty/:id" element={<CardDetails />} />
+        <Route path="form" element={<Form />} />
+        <Route path="*" element={<Layout />} />
+      </Route>
+    </Routes>
   );
 };
 

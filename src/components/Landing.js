@@ -11,7 +11,7 @@ const Landing = () => {
       <h2 className="checkpoint-landing">Checkpoint #2</h2>
       <div className="links-container-landing">
         <Link to="/users">Users</Link>
-        <Link to="/rickandmorty">API Rick & Morty</Link>
+        <Link to="/rickandmorty">API Rick &amp; Morty</Link>
         <Link to="/form">Formulario de Contacto</Link>
       </div>
     </main>

@@ -28,9 +28,9 @@ const Header = () => {
           <button
             onClick={() => setMenuopen(!menuopen)}
             className="close-menu"
-            aria-label="Abrir menú"
+            aria-label="Cerrar menú"
           >
-            <img src={close_menu_icon} alt="Abrir menú" />
+            <img src={close_menu_icon} alt="Cerrar menú" />
           </button>
           <Link onClick={() => setMenuopen(!menuopen)} to="/">
             Home
