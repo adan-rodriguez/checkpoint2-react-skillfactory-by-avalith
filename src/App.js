@@ -1,8 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer";
 import Table from "./components/Table";
 import Landing from "./components/Landing";
-import Header from "./components/Header";
 import Form from "./components/Form";
 import CardsContainer from "./components/CardsContainer";
 import CardDetails from "./components/CardDetails";

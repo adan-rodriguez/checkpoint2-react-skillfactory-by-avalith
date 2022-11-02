@@ -106,7 +106,7 @@ body {
 /* table styles */
 
 table {
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
   border-collapse: collapse;
   letter-spacing: 1px;
   background-color: #3d3e44;
@@ -115,6 +115,8 @@ table {
 
 .main-table {
   padding-top: 85px;
+  margin-bottom: 20px;
+  overflow-x: auto;
 }
 
 tbody {
@@ -159,16 +161,11 @@ tbody tr:nth-child(odd) {
 }
 
 caption {
-  margin: 10px 0;
   caption-side: bottom;
-  text-align: right;
   opacity: 0.96;
-}
-
-caption span {
   color: white;
   background-color: black;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 caption a {

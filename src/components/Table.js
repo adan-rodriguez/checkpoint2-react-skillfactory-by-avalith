@@ -26,16 +26,14 @@ const Table = () => {
     <main className="main-table">
       <table>
         <caption>
-          <span>
-            Usuarios extraídos de
-            <a
-              href="https://jsonplaceholder.typicode.com/users"
-              target="_blank"
-              rel="noreferrer"
-            >
-              https://jsonplaceholder.typicode.com/users
-            </a>
-          </span>
+          Usuarios extraídos de
+          <a
+            href="https://jsonplaceholder.typicode.com/users"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://jsonplaceholder.typicode.com/users
+          </a>
         </caption>
         <thead>
           <tr>
